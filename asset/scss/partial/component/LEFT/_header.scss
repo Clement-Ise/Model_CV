@@ -1,0 +1,16 @@
+header.personne_header {
+  @include align_1;
+  h1 {
+    font-family: "Six Caps";
+    font-size: 12rem;
+    text-transform: uppercase;
+    color: $lightColor;
+    margin: 0;
+  }
+  h2 {
+    font-family: "Oswald";
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $clairColor;
+  }
+}

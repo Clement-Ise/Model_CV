@@ -1,0 +1,33 @@
+section.experiencePro {
+  h2.experiencePro_title {
+    @include h2;
+  }
+  article {
+    margin-top: 3.8rem;
+    font-family: "PT Sans";
+    h3 {
+      color: $clairColor;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    .experiencePro_logo {
+      display: flex;
+      .article_experiencePro {
+        margin-right: 2rem;
+      }
+      img {
+        max-width: 10rem;
+        margin-top: 1rem;
+      }
+    }
+    ul.description_experiencePro {
+      li {
+        list-style-type: square;
+      }
+    }
+  }
+}

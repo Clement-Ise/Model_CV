@@ -1,0 +1,12 @@
+h2.formations_title {
+  @include h2;
+}
+.formations_footer {
+  font-family: "PT_sans";
+  font-weight: bold;
+  color: $clairColor;
+  @include liste;
+}
+.separator {
+  @include separator;
+}

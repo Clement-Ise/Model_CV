@@ -1,0 +1,17 @@
+// Main_Main layout
+
+header.poste_header {
+  margin: 5rem 0 2rem 0;
+  h2.title_poste {
+    font-family: "Oswald";
+    font-size: 2.5rem;
+    color: $fontColor;
+  }
+  p.date_poste {
+    font-family: "PT Sans";
+    color: $darkColor;
+  }
+}
+svg.header_svg {
+  margin-left: 20rem;
+}

@@ -1,0 +1,115 @@
+@mixin liste {
+  ul {
+    padding: 0;
+    display: flex;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+@mixin menu {
+  margin-top: 1rem;
+  padding: 2rem 2rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  flex-wrap: wrap;
+  background: $fontColor;
+}
+
+@mixin align_1 {
+  max-width: 100%;
+  margin: 0 0 0 18px;
+}
+@mixin align_2 {
+  max-width: 100%;
+  margin: 0 0 0 15px;
+}
+@mixin position {
+  text-align: center;
+  margin: 5rem 0 3rem 0;
+}
+
+@mixin bouton_1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5rem;
+  .btn_actions_delete {
+    margin: 0 0.6rem;
+    a {
+      color: $lightColor;
+      .fa-lg {
+        font-size: 2.7rem;
+      }
+    }
+  }
+  .btn_actions_update {
+    @extend .btn_actions_delete;
+    .fa-edit::before {
+      font-size: 2.5rem;
+    }
+  }
+  .btn_actions_add {
+    @extend .btn_actions_delete;
+    transform: rotate(45deg);
+    .fa-edit::before {
+      font-size: 2.5rem;
+    }
+  }
+}
+@mixin bouton_2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+  .btn_actions_delete {
+    margin: 0 0.6rem;
+    a {
+      color: $fontColor;
+      .fa-lg {
+        font-size: 2.7rem;
+      }
+    }
+  }
+  .btn_actions_update {
+    @extend .btn_actions_delete;
+    .fa-edit::before {
+      font-size: 2.5rem;
+    }
+  }
+  .btn_actions_add {
+    @extend .btn_actions_delete;
+    transform: rotate(45deg);
+    .fa-edit::before {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@mixin outils {
+  @include liste;
+  display: flex;
+  h4 {
+    margin: 0.5rem;
+  }
+  ul {
+    margin: 0;
+    li {
+      margin: 0.5rem 0.2rem;
+    }
+  }
+}
+
+@mixin h2 {
+  font-family: "Oswald";
+  font-size: 2.5rem;
+  color: $darkColor;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+@mixin marger_g {
+  margin: 0 0 0 4rem;
+}
+
+@mixin separator {
+  margin: 0 0.5rem;
+}

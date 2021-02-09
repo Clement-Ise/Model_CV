@@ -1,0 +1,36 @@
+/*   
+Site name: CV
+Description: Integration pour VueJs
+Author: Clément ISELIN
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&family=PT+Sans:ital,wght@0,400;1,400&family=Six+Caps&display=swap");
+
+@import "/vendors/normalize";
+
+@import "partial/utils/variables";
+@import "partial/utils/constante";
+@import "partial/utils/media";
+@import "partial/mixin/mixin_general";
+
+@import "partial/layout/menu";
+@import "partial/layout/header_form";
+
+@import "partial/component/LEFT/main_left";
+@import "partial/component/LEFT/header";
+@import "partial/component/LEFT/main";
+@import "partial/component/LEFT/hobbie";
+@import "partial/component/LEFT/footer";
+
+@import "partial/component/MAIN/main_main";
+@import "partial/component/MAIN/poste";
+@import "partial/component/MAIN/experience_pro";
+@import "partial/component/MAIN/outils";
+@import "partial/component/MAIN/footer";
+
+@import "partial/component/formation/Formation";
+@import "partial/component/hobbie/Hobbie";
+@import "partial/component/outil/Outil";
+@import "partial/component/personne/Personne";
+@import "partial/component/poste/Poste";
+@import "partial/component/reseau/Reseau";

@@ -1,0 +1,19 @@
+.left_parter {
+  @include liste;
+  width: 25%;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  background: $fontColor;
+  padding-top: 20rem;
+}
+.btn_actions_personne {
+  @include bouton_1;
+}
+.btn_actions_reseau {
+  @include bouton_1;
+  margin: 4rem 0 0 0;
+}
+.btn_actions_hobbie {
+  @include bouton_1;
+}

@@ -1,0 +1,65 @@
+section.outilCompetences {
+  max-width: 100vw;
+  margin: 0 6rem 2rem;
+  display: grid;
+  grid:
+    "outils_competences svg outils_encours" auto
+    "outils_environnement svg outis_encours" auto
+    / 1fr 20% 1fr;
+  h3 {
+    margin-bottom: 0.5rem;
+    @include h2;
+  }
+}
+.outils_competences {
+  grid-area: outils_competences;
+  font-family: "PT_sans";
+}
+div.maquettages {
+  @include outils;
+}
+div.developpement {
+  @include outils;
+  flex-direction: column;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+div.partage {
+  @include outils;
+}
+.outils_environnement {
+  grid-area: outils_environnement;
+  font-family: "PT_sans";
+  margin-top: 8rem;
+  h3 {
+    margin-bottom: 0.5rem;
+    @include h2;
+  }
+}
+.svg {
+  grid-area: svg;
+  align-self: center;
+  margin: 0 7rem 0 2rem;
+}
+div.systeme {
+  @include outils;
+}
+div.traitement {
+  @include outils;
+}
+div.IDE {
+  @include outils;
+}
+div.communication {
+  @include outils;
+}
+.outils_encours {
+  grid-area: outils_encours;
+  align-self: center;
+  margin-right: 7rem;
+}
+div.cms {
+  @include outils;
+}

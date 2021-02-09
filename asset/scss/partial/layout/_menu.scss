@@ -1,0 +1,109 @@
+// Connteneur de la croix
+.nav-container-toggle {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// Croix(trait central)
+.nav-toggle-bar {
+  content: "";
+  background-color: $lightColor;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  // Croix(trait avant)
+  &::before {
+    width: 80%;
+    top: -10px;
+  }
+  // Croix(trait après)
+  &::after {
+    width: 40%;
+    top: 10px;
+  }
+  /*****Action*****/
+  // Déclenchement au click
+  // Class"-open" ajouter en Js à ".nav-container-toggle"
+  // Ajout de la classe .nav-container-toggle.-open avec le &
+  // Rotation du bloc avec les croix a 45°
+  .nav-container-toggle.-open & {
+    transform: rotate(45deg);
+    width: 80%;
+  }
+}
+// Croix(trait avant et après)
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+  @extend .nav-toggle-bar;
+  /*****Action*****/
+  // Déclenchement au click
+  // Class"-open" ajouter en Js à ".nav-container-toggle"
+  // Ajout de la classe .nav-container-toggle.-open avec le &
+  // Rotation des trait avant/après et positionnement a 45°
+  .nav-container-toggle.-open & {
+    top: 0;
+    transform: rotate(270deg);
+    width: 100%;
+  }
+}
+/* Menu dans son état initial mais fermé*/
+.btn_actions {
+  visibility: hidden;
+  transform: translateX(-100vw);
+  top: 15rem;
+  left: 0;
+  right: 80%;
+  bottom: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  /*****Action*****/
+  // Déclenchement au click
+  // Class"-open" ajouter en Js à ".nav-container-toggle"
+  // Rendre visible les icons
+  // Fais translater les icons dans le champs
+  &.-open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+/* Menu de modification CRUD*/
+.btn_actions_crud {
+  top: 15rem;
+  left: 0;
+  right: 80%;
+  bottom: 0;
+}
+
+.btn_actions_personne {
+  @extend .btn_actions;
+}
+.btn_actions_reseau {
+  @extend .btn_actions;
+}
+.btn_actions_poste {
+  @extend .btn_actions;
+}
+.btn_actions_experiencePro {
+  @extend .btn_actions;
+}
+.btn_actions_outils {
+  @extend .btn_actions;
+}
+.btn_actions_footer {
+  @extend .btn_actions;
+}
+.btn_actions_hobbie {
+  @extend .btn_actions;
+}
+.btn_actions_create {
+  @extend .btn_actions_crud;
+}

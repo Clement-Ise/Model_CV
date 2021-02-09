@@ -1,0 +1,15 @@
+.personne_hobbie {
+  @extend header.personne_header;
+  @include align_2;
+  max-width: 95%;
+  font-family: "Oswald";
+  color: $clairColor;
+  margin-bottom: 2rem;
+  h2 {
+    @include position;
+    margin: 3rem 0 3rem 0;
+  }
+  p {
+    color: $lightColor;
+  }
+}

@@ -1,0 +1,18 @@
+.main_parter {
+  @include marger_g;
+}
+.btn_actions_poste {
+  @include bouton_2;
+  margin-top: 2rem;
+}
+.btn_actions_experiencePro {
+  @include bouton_2;
+  margin-top: 2rem;
+}
+.btn_actions_outils {
+  @include bouton_2;
+  margin-bottom: 2rem;
+}
+.btn_actions_footer {
+  @include bouton_2;
+}

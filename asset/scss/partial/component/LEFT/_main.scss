@@ -1,0 +1,23 @@
+main.personne_main {
+  @extend header.personne_header;
+  @include align_2;
+  h2 {
+    margin: 5rem 0 3rem 0;
+  }
+  .infos_me {
+    color: $lightColor;
+    font-family: "PT Sans";
+    ul {
+      display: flex;
+      li:nth-child(2) {
+        margin-left: 0.5rem;
+      }
+      a {
+        color: $lightColor;
+      }
+      .move {
+        padding-top: 6rem;
+      }
+    }
+  }
+}
