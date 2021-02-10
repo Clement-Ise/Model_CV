@@ -368,8 +368,8 @@ body {
 
 /* Menu dans son état initial mais fermé*/
 .btn_actions, .btn_actions_personne, .btn_actions_reseau, .btn_actions_poste, .btn_actions_experiencePro, .btn_actions_outils, .btn_actions_footer, .btn_actions_hobbie {
-  visibility: hidden;
-  transform: translateX(-100vw);
+  visibility: visible;
+  transform: translateX(0);
   top: 15rem;
   left: 0;
   right: 80%;
@@ -378,8 +378,8 @@ body {
   transition: all 0.3s ease-in-out;
   /*****Action*****/ }
   .btn_actions.-open, .-open.btn_actions_personne, .-open.btn_actions_reseau, .-open.btn_actions_poste, .-open.btn_actions_experiencePro, .-open.btn_actions_outils, .-open.btn_actions_footer, .-open.btn_actions_hobbie {
-    visibility: visible;
-    transform: translateX(0); }
+    visibility: hidden;
+    transform: translateX(-100vw); }
 
 /* Menu de modification CRUD*/
 .btn_actions_crud, .btn_actions_create {
@@ -925,6 +925,26 @@ h2.formations_title {
 .separator {
   margin: 0 0.5rem; }
 
+.delete_popup_hob, .delete_popup_hob-active {
+  visibility: hidden;
+  font-family: "Oswald";
+  position: relative;
+  top: -42rem;
+  right: 1rem;
+  width: 61rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edbfc8;
+  border-radius: 8px; }
+  .delete_popup_hob .delete_title, .delete_popup_hob-active .delete_title {
+    text-align: center;
+    font-size: 2.5rem; }
+
+.delete_popup_hob-active {
+  visibility: visible; }
+
 .media_body {
   font-family: "Oswald";
   font-size: 2rem; }
@@ -991,4 +1011,37 @@ h2.formations_title {
     font-size: 2.5rem; }
 
 .delete_popup-active {
+  visibility: visible; }
+
+.reseau {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.reseau_delete {
+  display: flex; }
+
+.img-responsive {
+  width: 100%;
+  border: 1px solid lightgray;
+  margin: 10px; }
+
+.delete_popup_res, .delete_popup_res-active {
+  visibility: hidden;
+  font-family: "Oswald";
+  position: relative;
+  top: -43rem;
+  right: 0rem;
+  width: 60rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edbfc8;
+  border-radius: 8px; }
+  .delete_popup_res .delete_title, .delete_popup_res-active .delete_title {
+    text-align: center;
+    font-size: 2.5rem; }
+
+.delete_popup_res-active {
   visibility: visible; }

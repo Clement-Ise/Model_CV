@@ -35,15 +35,15 @@
           <div class="nav_menu_crud">
             <nav class="navla">
               <ul class="nav">
-                <li class="menu_prhpeofc"><a href="">Personne</a></li>
-                <li class="menu_prhpeofc"><a href="#">Reseaux</a></li>
-                <li class="menu_prhpeofc"><a href="#">Hobbies</a></li>
-                <li class="menu_prhpeofc"><a href="#">Poste</a></li>
+                <li class="menu_prhpeofc"><a href="/index.html#Personne">Personne</a></li>
+                <li class="menu_prhpeofc"><a href="/index.html#Reseaux"> Reseaux</a></li>
+                <li class="menu_prhpeofc"><a href="/index.html#Hobbies">Hobbies</a></li>
+                <li class="menu_prhpeofc"><a href="/index.html#Poste">Poste</a></li>
                 <li class="menu_prhpeofc">
-                  <a href="#">Expériences Pro</a>
+                  <a href="/index.html#Experience_pro">Expériences Pro</a>
                 </li>
-                <li class="menu_prhpeofc"><a href="#">Outils</a></li>
-                <li class="menu_prhpeofc"><a href="#">Formations</a></li>
+                <li class="menu_prhpeofc"><a href="/index.html#Outils">Outils</a></li>
+                <li class="menu_prhpeofc"><a href="/index.html#Formations">Formations</a></li>
                 <li class="menu_prhpeofc cv">
                   <a href="../index.html">See Your CV</a>
                 </li>
@@ -58,92 +58,66 @@
             <div class="media">
               <div class="media_body">
                 <h2 class="media_title">
-                  Rentré les informations de la Personne
+                  Rentrer les informations concernant votre expérience professionnelle
                 </h2>
                 <div>
                   <form class="media_formulaire" action="#" method="post">
                     <div class="form">
-                      <label class="form_lab" for="name">Nom :</label>
+                      <label class="form_lab" for="name"
+                        >Intitulé du poste : </label
+                      >
                       <input
                         type="text"
                         id="name"
                         name="Nom"
-                        placeholder="Dupont"
+                        placeholder="Concepteur"
                       />
                     </div>
                     <div class="form">
-                      <label class="form_lab" for="l_name">Prénom :</label>
+                      <label class="form_lab" for="name"
+                        >Nom de l'entreprise:</label
+                      >
                       <input
                         type="text"
-                        id="l_name"
-                        name="Prénom"
-                        placeholder="Paul"
+                        id="name"
+                        name="Nom"
+                        placeholder="SAS exmple"
                       />
                     </div>
                     <div class="form">
-                      <label class="form_lab" for="poste_p">Poste :</label>
+                      <label class="form_lab" for="l_name">Date de début :</label>
                       <input
                         type="text"
-                        id="poste_p"
-                        name="Poste"
-                        placeholder="Developpeur Web"
+                        id="l_debut"
+                        name="date_début"
+                        placeholder="X/XX/XXXX"
                       />
                     </div>
                     <div class="form">
-                      <label class="form_lab" for="adresse">Adresse :</label>
+                      <label class="form_lab" for="l_name">Date de fin :</label>
                       <input
                         type="text"
-                        id="adresse"
-                        name="adresse"
-                        placeholder="2 rue d'exemple"
+                        id="l_fin"
+                        name="date_fin"
+                        placeholder="X/XX/XXXX"
                       />
                     </div>
-                    <div class="form">
-                      <label class="form_lab" for="CP">CP :</label>
-                      <input
-                        type="number"
-                        id="CP"
-                        name="CP"
-                        placeholder="75000"
-                        min="0"
+                    <div class="col-5">
+                      <img
+                        src="#"
+                        id="previewImage"
+                        class="img-responsive"
+                        alt="Logo de l'entreprise"
                       />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="ville">Ville :</label>
-                      <input
-                        type="text"
-                        id="ville"
-                        name="ville"
-                        placeholder="Paris"
-                      />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="mobile">Mobile :</label>
-                      <input
-                        type="number"
-                        id="mobile"
-                        name="mobile"
-                        placeholder="0000000000"
-                        min="0"
-                      />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="mail">E-mail :</label>
-                      <input
-                        type="email"
-                        id="mail"
-                        name="user_mail"
-                        placeholder="dupontpaul@exemple.com"
-                      />
-                    </div>
-                    <div class="form">
-                      <input type="checkbox" id="voiture" name="voiture" />
-                      <label class="form_lab" for="voiture">Voiture</label>
-                    </div>
-
-                    <div class="form">
-                      <input type="checkbox" id="permis" name="permis" />
-                      <label class="form_lab" for="permis">Permis</label>
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="validatedCustomFile"
+                          required
+                        />
+                        <div class="invalid-feedback">Image invalide</div>
+                      </div>
                     </div>
                     <div>
                       <input
@@ -151,7 +125,6 @@
                         type="button"
                         value="Ajouter"
                       />
-                    </div>
                   </form>
                 </div>
               </div>

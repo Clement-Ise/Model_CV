@@ -1,5 +1,36 @@
+.reseau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reseau_delete {
+  display: flex;
+}
 .img-responsive {
   width: 100%;
   border: 1px solid lightgray;
   margin: 10px;
+}
+//popup//
+.delete_popup_res {
+  visibility: hidden;
+  font-family: "Oswald";
+  position: relative;
+  top: -43rem;
+  right: 0rem;
+  width: 60rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edbfc8;
+  border-radius: 8px;
+  .delete_title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+.delete_popup_res-active {
+  visibility: visible;
+  @extend .delete_popup_res;
 }

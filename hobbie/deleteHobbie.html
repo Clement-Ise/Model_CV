@@ -18,7 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
     <link rel="stylesheet" href="../dist/css/style.css" />
-    <script defer src="../dist/js/script.js"></script>
+    <!-- <script defer src="../dist/js/script_hobbie.js"></script> -->
   </head>
 
   <body>
@@ -57,71 +57,67 @@
           <section class="card card-marketing">
             <div class="media">
               <div class="media_body">
-                <h2 class="media_title">
-                  Supprimer les informations concernant la formation
-                </h2>
-                <div class="reseau">
-                  <form class="reseau_delete" action="#" method="post">
-                    <div>
-                      <input
-                        type="checkbox"
-                        id="delete"
-                        name="deleteChoice1"
-                        checked
-                      />
-                    </div>
-                    <div>
-                      <ul>
-                        <li class="form">Année : XXXX  </li>
-                        <li class="form">Intitulé de la formation : Bac STAV</li>
-                        <li class="form">Nom de l'établissement : Lycée exemple </li>
-                        <li class="form">Ville : Paris </li>
-                        <li class="form">Département : Ile de france </li>
-                      </ul>
-                    </div>
-                  </form>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="587.003"
-                    height="3"
-                    viewBox="0 0 587.003 3"
-                  >
-                    <line
-                      id="Ligne_20"
-                      data-name="Ligne 20"
-                      x2="587"
-                      y2="2"
-                      transform="translate(0.002 0.5)"
-                      fill="none"
-                      stroke="#707070"
-                      stroke-width="1"
-                    />
-                  </svg>
+                <h2 class="media_title">Supprimer vos hobbies</h2>
+                <div>
                   <div>
-                    <input
-                      class="favorite1 styled1"
-                      type="button"
-                      value="Annuler"
-                    />
-                    <input
-                      class="favorite1 styled1"
-                      type="button"
-                      value="Supprimer la selection"
-                    />
+                    <input type="checkbox" id="delete" name="deleteChoice1" />
                   </div>
-                  <div class="delete_popup_res">
-                    <h2 class="delete_title">
-                      Êtes-vous sur de vouloir supprimer la selection ?
-                    </h2>
-                    <a href="../index.html">
+                  <form class="media_formulaire" action="#" method="post">
+                    <div>
+                      <p>Nom : Pêche</p>
+                    </div>
+                    <div>
+                      <p>
+                        Explication : Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Atque ullam vitae at animi eius soluta
+                        sit ipsam reiciendis quis doloribus, quas ut eum amet
+                        numquam quisquam error repellendus harum fugiat.
+                      </p>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="587.003"
+                      height="3"
+                      viewBox="0 0 587.003 3"
+                    >
+                      <line
+                        id="Ligne_20"
+                        data-name="Ligne 20"
+                        x2="587"
+                        y2="2"
+                        transform="translate(0.002 0.5)"
+                        fill="none"
+                        stroke="#707070"
+                        stroke-width="1"
+                      />
+                    </svg>
+                    <div>
                       <input
                         class="favorite1 styled1"
-                        type="submit"
-                        value="Supprimer définitivement"
+                        type="button"
+                        value="Annuler"
                       />
-                    </a>
-                  </div>
+                      <input
+                        class="favorite1 styled1"
+                        type="button"
+                        value="Supprimer la selection"
+                      />
+                    </div>
+                    <div class="delete_popup_res">
+                      <h2 class="delete_title">
+                        Êtes-vous sur de vouloir supprimer la personne ?
+                      </h2>
+                      <a href="../index.html">
+                        <input
+                          class="favorite1 styled1"
+                          type="submit"
+                          value="Supprimer définitivement"
+                        />
+                      </a>
+                    </div>
+                  </form>
                 </div>
+              </div>
             </div>
           </section>
         </div>

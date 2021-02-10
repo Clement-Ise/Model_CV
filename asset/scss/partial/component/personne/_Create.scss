@@ -1,0 +1,50 @@
+.media_body {
+  font-family: "Oswald";
+  font-size: 2rem;
+}
+.media_title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.media_formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.form {
+  margin: 2rem;
+}
+.form_lab {
+  margin-right: 2rem;
+}
+.favorite {
+  margin: 2rem 30rem;
+}
+.styled {
+  border: 0;
+  line-height: 2.4;
+  padding: 0 10rem;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $lightColor;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: $darkColor;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  &:hover {
+    background-color: $darkColor;
+    color: $lightColor;
+  }
+  &:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+}

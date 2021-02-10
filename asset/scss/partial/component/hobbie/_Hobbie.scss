@@ -1,0 +1,23 @@
+//popup//
+.delete_popup_hob {
+  visibility: hidden;
+  font-family: "Oswald";
+  position: relative;
+  top: -42rem;
+  right: 1rem;
+  width: 61rem;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edbfc8;
+  border-radius: 8px;
+  .delete_title {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+.delete_popup_hob-active {
+  visibility: visible;
+  @extend .delete_popup_hob;
+}

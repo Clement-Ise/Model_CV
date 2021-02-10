@@ -35,15 +35,27 @@
           <div class="nav_menu_crud">
             <nav class="navla">
               <ul class="nav">
-                <li class="menu_prhpeofc"><a href="#">Personne</a></li>
-                <li class="menu_prhpeofc"><a href="#">Reseaux</a></li>
-                <li class="menu_prhpeofc"><a href="#">Hobbies</a></li>
-                <li class="menu_prhpeofc"><a href="#">Poste</a></li>
                 <li class="menu_prhpeofc">
-                  <a href="#">Expériences Pro</a>
+                  <a href="/index.html#Personne">Personne</a>
                 </li>
-                <li class="menu_prhpeofc"><a href="#">Outils</a></li>
-                <li class="menu_prhpeofc"><a href="#">Formations</a></li>
+                <li class="menu_prhpeofc">
+                  <a href="/index.html#Reseaux"> Reseaux</a>
+                </li>
+                <li class="menu_prhpeofc">
+                  <a href="/index.html#Hobbies">Hobbies</a>
+                </li>
+                <li class="menu_prhpeofc">
+                  <a href="/index.html#Poste">Poste</a>
+                </li>
+                <li class="menu_prhpeofc">
+                  <a href="/index.html#Experience_pro">Expériences Pro</a>
+                </li>
+                <li class="menu_prhpeofc">
+                  <a href="/index.html#Outils">Outils</a>
+                </li>
+                <li class="menu_prhpeofc">
+                  <a href="/index.html#Formations">Formations</a>
+                </li>
                 <li class="menu_prhpeofc cv">
                   <a href="../index.html">See Your CV</a>
                 </li>
@@ -58,98 +70,53 @@
             <div class="media">
               <div class="media_body">
                 <h2 class="media_title">
-                  Rentré les informations de la Personne
+                  Modifier les informations de l'outil
                 </h2>
                 <div>
+                  <div>
+                    <input type="checkbox" id="delete" name="deleteChoice1" />
+                  </div>
                   <form class="media_formulaire" action="#" method="post">
                     <div class="form">
-                      <label class="form_lab" for="name">Nom :</label>
+                      <label class="form_lab" for="name">Type :</label>
                       <input
                         type="text"
                         id="name"
                         name="Nom"
-                        placeholder="Dupont"
+                        placeholder="Maquettage"
                       />
                     </div>
                     <div class="form">
-                      <label class="form_lab" for="l_name">Prénom :</label>
+                      <label class="form_lab" for="l_name">Nom : </label>
                       <input
                         type="text"
                         id="l_name"
                         name="Prénom"
-                        placeholder="Paul"
+                        placeholder="Adobe XD"
                       />
                     </div>
-                    <div class="form">
-                      <label class="form_lab" for="poste_p">Poste :</label>
-                      <input
-                        type="text"
-                        id="poste_p"
-                        name="Poste"
-                        placeholder="Developpeur Web"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="587.003"
+                      height="3"
+                      viewBox="0 0 587.003 3"
+                    >
+                      <line
+                        id="Ligne_20"
+                        data-name="Ligne 20"
+                        x2="587"
+                        y2="2"
+                        transform="translate(0.002 0.5)"
+                        fill="none"
+                        stroke="#707070"
+                        stroke-width="1"
                       />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="adresse">Adresse :</label>
-                      <input
-                        type="text"
-                        id="adresse"
-                        name="adresse"
-                        placeholder="2 rue d'exemple"
-                      />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="CP">CP :</label>
-                      <input
-                        type="number"
-                        id="CP"
-                        name="CP"
-                        placeholder="75000"
-                        min="0"
-                      />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="ville">Ville :</label>
-                      <input
-                        type="text"
-                        id="ville"
-                        name="ville"
-                        placeholder="Paris"
-                      />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="mobile">Mobile :</label>
-                      <input
-                        type="number"
-                        id="mobile"
-                        name="mobile"
-                        placeholder="0000000000"
-                        min="0"
-                      />
-                    </div>
-                    <div class="form">
-                      <label class="form_lab" for="mail">E-mail :</label>
-                      <input
-                        type="email"
-                        id="mail"
-                        name="user_mail"
-                        placeholder="dupontpaul@exemple.com"
-                      />
-                    </div>
-                    <div class="form">
-                      <input type="checkbox" id="voiture" name="voiture" />
-                      <label class="form_lab" for="voiture">Voiture</label>
-                    </div>
-
-                    <div class="form">
-                      <input type="checkbox" id="permis" name="permis" />
-                      <label class="form_lab" for="permis">Permis</label>
-                    </div>
+                    </svg>
                     <div>
                       <input
                         class="favorite styled"
                         type="button"
-                        value="Mettre à jour"
+                        value="Mettre à jours"
                       />
                     </div>
                   </form>

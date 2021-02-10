@@ -56,8 +56,8 @@
 }
 /* Menu dans son état initial mais fermé*/
 .btn_actions {
-  visibility: hidden;
-  transform: translateX(-100vw);
+  visibility: visible;
+  transform: translateX(0);
   top: 15rem;
   left: 0;
   right: 80%;
@@ -70,8 +70,8 @@
   // Rendre visible les icons
   // Fais translater les icons dans le champs
   &.-open {
-    visibility: visible;
-    transform: translateX(0);
+    visibility: hidden;
+    transform: translateX(-100vw);
   }
 }
 
